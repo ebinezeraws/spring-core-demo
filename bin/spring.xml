@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	
+	<bean id="square" class="springdemo.Square" />
+	<bean id="rectangle" class="springdemo.Rectangle" />
+	<bean id="painter" class="springdemo.Painter" autowire="byName">
+		<!-- <constructor-arg name="shape" ref="rectangle"/> -->
+		<!-- <property name="shape" ref="rectangle"></property> -->
+	</bean>
+</beans>
